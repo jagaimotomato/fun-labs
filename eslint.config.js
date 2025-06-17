@@ -14,12 +14,12 @@ export default [
     languageOptions: {
       globals: {
         console: true,
-      },
-      env: {
-        browser: true,
+        document: true,
+        window: true,
       },
       parserOptions: {
-        parser: tseslint.parser,
+        ecmaVersion: 'latest',
+        sourceType: 'module',
       },
     },
     rules: {
@@ -43,9 +43,7 @@ export default [
   {
     files: ['**/*.vue'],
     languageOptions: {
-      parserOptions: {
-        parser: tseslint.parser,
-      },
+      parser: tseslint.parser,
     },
   },
 ]
