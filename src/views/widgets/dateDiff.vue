@@ -47,7 +47,7 @@ const day = ref(today.getDate())
 const diff = ref('')
 
 function handleClick() {
-  // 目标日期，时间设置为当日的零点
+  // 目标日期，时间设置为当日的零 点 零 分 零 秒
   const targetDate = new Date(year.value, month.value - 1, day.value)
 
   // 今天的日期，时间也设置为零点，以进行精确的日期比较
