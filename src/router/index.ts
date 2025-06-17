@@ -26,7 +26,8 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  // 使用 import.meta.env.BASE_URL 来获取 Vite 配置的基础路径
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
 
